@@ -1,0 +1,12 @@
+ <div class="card text-center w-50 m-auto">
+    <div class="card-body">
+        <h1 class="card-title">{{title}}</h1>
+        {{#if user}}
+        <a href="/notes/add" class="btn btn-info btn-block">Add note</a>
+        <a href="/notes" class="btn btn-warning btn-block">View notes</a>
+        {{else}}
+        <a href="/users/login" class="btn btn-info btn-block">Login</a>
+        <a href="/users/register" class="btn btn-warning btn-block">Register</a>
+        {{/if}}
+    </div>
+</div>
